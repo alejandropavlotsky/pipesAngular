@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './ordenar.component.html',
   styles: [],
 })
-export class OrdenarComponent {}
+export class OrdenarComponent {
+  enMayusculas: boolean = true;
+  cambiarMayusculas() {
+    this.enMayusculas = !this.enMayusculas;
+  }
+}
